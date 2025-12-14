@@ -16,7 +16,9 @@ class Analyzer:
         self.model = SentenceTransformer("all-MiniLM-L6-v2")
         self.sentiment_pipe = pipeline(
             "text-classification", 
-            model="tabularisai/multilingual-sentiment-analysis"
+            model="tabularisai/multilingual-sentiment-analysis",
+            truncation=True,
+            max_length=512
         )
 
     def sentiment_analysis(self, text):

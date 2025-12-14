@@ -3,8 +3,6 @@ from datetime import datetime
 
 import pandas as pd
 import serpapi
-from dotenv import load_dotenv
-load_dotenv(dotenv_path="/Users/tim/Desktop/test_task/backend/src/.env", override=True)
 
 
 class Scraper:
